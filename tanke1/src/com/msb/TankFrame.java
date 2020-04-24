@@ -13,9 +13,9 @@ import java.awt.event.WindowEvent;
  * @Author: Zhangxp
  * @Date: 2020-04-23 21:03
  */
-public class TankFrame extends Frame {
+public class  TankFrame extends Frame {
 
-   Tank myTank = new Tank(200,200,Dir.DOWN);
+   Tank myTank = new Tank(200,200,Dir.DOWN,this);
    Bullet bullet = new Bullet(300,300,Dir.DOWN);
 
    static final int GAME_WIDTH = 800, GAME_HEIGHT = 600;
@@ -51,9 +51,7 @@ public class TankFrame extends Frame {
         goffScreen.setColor(Color.BLACK);
         goffScreen.fillRect(0,0,GAME_WIDTH,GAME_HEIGHT);
         goffScreen.setColor(c);
-
         paint(goffScreen);
-
         g.drawImage(offScreenImage,0,0,null);
 
 
@@ -114,6 +112,10 @@ public class TankFrame extends Frame {
                     break;
                 case KeyEvent.VK_DOWN:
                     bD = false;
+                    break;
+
+                case KeyEvent.VK_CONTROL:
+                    myTank.fire();
                     break;
                     default:
                         break;

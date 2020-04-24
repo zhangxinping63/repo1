@@ -10,7 +10,7 @@ public class Bullet {
     //子弹速度
     private static final int SPEED = 10;
     //炮弹宽度，高度
-    private static final int WIDTH = 5, HEIGHT = 5;
+    private static final int WIDTH = 20, HEIGHT = 20;
     //子弹位置
     private int x,y;
     //子弹方向
