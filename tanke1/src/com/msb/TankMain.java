@@ -10,6 +10,7 @@ public class TankMain {
         while (true){
             Thread.sleep(50);
             tf.repaint();
+            System.out.println("1");
         }
     }
 }
