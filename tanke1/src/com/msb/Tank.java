@@ -9,7 +9,7 @@ import java.awt.*;
 public class Tank {
     private int x = 200, y = 200;
     private Dir dir = Dir.DOWN;
-    private static final int SPEED = 10;
+    private static final int SPEED = 5;
 
     public boolean isMoving() {
         return moving;
@@ -57,12 +57,10 @@ public class Tank {
         return SPEED;
     }
 
+    //画坦克
     public void paint(Graphics g) {
         g.fillRect(x,y,50,50);
-        
         move();
-
-
     }
 
     private void move() {
