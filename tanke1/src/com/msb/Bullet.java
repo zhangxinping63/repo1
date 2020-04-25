@@ -1,6 +1,7 @@
 package com.msb;
 
 import java.awt.*;
+import java.util.HashMap;
 
 /**
  * @Author: Zhangxp
@@ -10,14 +11,25 @@ public class Bullet {
     //子弹速度
     private static final int SPEED = 10;
     //炮弹宽度，高度
-    private static final int WIDTH = 20, HEIGHT = 20;
+    public static final int WIDTH = ResourceMgr.bulletD.getWidth();
+    public static final int HEIGHT = ResourceMgr.bulletD.getHeight();
     //子弹位置
     private int x,y;
     //子弹方向
     private Dir dir;
+
+    public boolean isLive() {
+        return living;
+    }
+
+    public void setLive(boolean live) {
+        this.living = live;
+    }
     //定义子弹活着
-    private boolean live = true;
+    private boolean living = true;
+
     TankFrame tf = null;
+
     //构造方法
     public  Bullet(int x, int y, Dir dir,TankFrame tf){
         this.x = x;
@@ -26,6 +38,9 @@ public class Bullet {
         this.tf = tf;
     }
     public void paint(Graphics g) {
+        if(!living){
+            tf.bullets.remove(this);
+        }
 
         switch (dir){
             case LEFT:
@@ -67,6 +82,19 @@ public class Bullet {
             default:
                 break;
         }
-        if(x < 0 || y < 0 || x > TankFrame.GAME_WIDTH || y > TankFrame.GAME_HEIGHT) live = false;
+        if(x < 0 || y < 0 || x > TankFrame.GAME_WIDTH || y > TankFrame.GAME_HEIGHT) living = false;
+    }
+
+    public void collideWith(Tank tank) {
+        Rectangle rect1 = new Rectangle(this.x,this.y,WIDTH, HEIGHT);
+        Rectangle rect2 = new Rectangle(tank.getX(),tank.getY(),Tank.WIDTH,Tank.HEIGHT );
+        if(rect1.intersects(rect2)){
+            tank.die();
+            this.die();
+        }
+    }
+
+    private void die() {
+        this.living = false;
     }
 }

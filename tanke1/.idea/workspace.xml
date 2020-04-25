@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e7f808ce-7bc0-4d89-b937-07a3c6a497f4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tanke1/com/msb/Tank$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tanke1/com/msb/Tank$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tanke1/com/msb/Tank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tanke1/com/msb/Tank.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/msb/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/msb/Bullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/msb/ResourceMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/msb/ResourceMgr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/msb/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/msb/Tank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/msb/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/msb/TankFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/msb/TankMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/msb/TankMain.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,26 +20,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/msb/TankMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="264">
+              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/msb/TankFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/msb/Bullet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="289">
+              <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#438#439#0" expanded="true" />
+                <element signature="e#465#466#0" expanded="true" />
+                <element signature="e#506#507#0" expanded="true" />
+                <element signature="e#538#539#0" expanded="true" />
+                <element signature="e#2303#2304#0" expanded="true" />
+                <element signature="e#2335#2336#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,6 +52,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/msb/TankFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="68" column="46" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -71,10 +80,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/msb/Tank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="78" column="9" lean-forward="true" selection-start-line="65" selection-start-column="7" selection-end-line="78" selection-end-column="9" />
+            <state relative-caret-position="157">
+              <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2552#2553#0" expanded="true" />
+                <element signature="e#2586#2587#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,12 +114,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/msb/Dir.java" />
         <option value="$PROJECT_DIR$/src/com/msb/tank.java" />
-        <option value="$PROJECT_DIR$/src/com/msb/TankMain.java" />
-        <option value="$PROJECT_DIR$/src/com/msb/TankFrame.java" />
         <option value="$PROJECT_DIR$/src/test/ImageTest.java" />
-        <option value="$PROJECT_DIR$/src/com/msb/Tank.java" />
         <option value="$PROJECT_DIR$/src/com/msb/ResourceMgr.java" />
+        <option value="$PROJECT_DIR$/src/com/msb/TankMain.java" />
         <option value="$PROJECT_DIR$/src/com/msb/Bullet.java" />
+        <option value="$PROJECT_DIR$/src/com/msb/Tank.java" />
+        <option value="$PROJECT_DIR$/src/com/msb/TankFrame.java" />
       </list>
     </option>
   </component>
@@ -184,7 +195,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587819873745" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587825137888" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -292,7 +303,7 @@
       <workItem from="1587691665362" duration="5239000" />
       <workItem from="1587697036221" duration="3937000" />
       <workItem from="1587706829115" duration="10103000" />
-      <workItem from="1587777170074" duration="8249000" />
+      <workItem from="1587777170074" duration="12455000" />
     </task>
     <task id="LOCAL-00001" summary="试试修改">
       <created>1587708207576</created>
@@ -343,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587798631308</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="子弹换成图片">
+      <created>1587819909912</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1587819909912</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -367,13 +385,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35712000" />
+    <option name="totallyTimeSpent" value="39918000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -381,8 +399,8 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32925472" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32850778" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32850778" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32850778" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39933258" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -456,7 +474,8 @@
     <MESSAGE value="消除子弹内部内存泄漏问题，处理迭代器删除问题。1使用普通方式，2在迭代过程中删除" />
     <MESSAGE value="junit测试图片" />
     <MESSAGE value="建立resourceMgr管理类，对图片进行处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="建立resourceMgr管理类，对图片进行处理" />
+    <MESSAGE value="子弹换成图片" />
+    <option name="LAST_COMMIT_MESSAGE" value="子弹换成图片" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://D:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/Window.java">
@@ -568,10 +587,13 @@
     <entry file="file://$PROJECT_DIR$/src/images/missileLU.gif">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/msb/TankMain.java">
+    <entry file="file://$PROJECT_DIR$/src/com/msb/ResourceMgr.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        <state relative-caret-position="509">
+          <caret line="25" column="113" lean-forward="true" selection-start-line="25" selection-start-column="113" selection-end-line="25" selection-end-column="113" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -585,37 +607,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/msb/TankFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/com/msb/Bullet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/msb/ResourceMgr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="25" column="113" lean-forward="true" selection-start-line="25" selection-start-column="113" selection-end-line="25" selection-end-column="113" />
+        <state relative-caret-position="289">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#2303#2304#0" expanded="true" />
+            <element signature="e#2335#2336#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/msb/Tank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="78" column="9" lean-forward="true" selection-start-line="65" selection-start-column="7" selection-end-line="78" selection-end-column="9" />
+        <state relative-caret-position="157">
+          <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2552#2553#0" expanded="true" />
+            <element signature="e#2586#2587#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/msb/Bullet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/msb/TankMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="264">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/msb/TankFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="68" column="46" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
         </state>
       </provider>
     </entry>
