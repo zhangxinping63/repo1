@@ -1,5 +1,7 @@
 package com.msb;
 
+import com.sun.xml.internal.bind.util.Which;
+
 import java.awt.*;
 
 /**
@@ -61,11 +63,26 @@ public class Tank {
 
     //画坦克
     public void paint(Graphics g) {
-        Color c = g.getColor();
-        g.setColor(Color.YELLOW);
+        switch (dir){
+            case LEFT:
+                g.drawImage(ResourceMgr.tankL,x,y,null);
+                break;
+            case UP:
+                g.drawImage(ResourceMgr.tankU,x,y,null);
+                break;
+            case RIGHT:
+                g.drawImage(ResourceMgr.tankR,x,y,null);
+                break;
+            case DOWN:
+                g.drawImage(ResourceMgr.tankD,x,y,null);
+                break;
+        }
+        //Color c = g.getColor();
 
-        g.fillRect(x,y,50,50);
-        g.setColor(c);
+       // g.setColor(Color.YELLOW);
+
+       // g.fillRect(x,y,50,50);
+       // g.setColor(c);
         move();
     }
 
