@@ -7,9 +7,9 @@ package com.msb;
 public class TankMain {
     public static void main(String[] args) throws Exception{
         TankFrame tf = new TankFrame();
-        //初始化坦克
+        //初始化敌人tank
         for(int i = 0; i < 5; i++){
-            tf.tanks.add(new Tank(50 +i * 80,200,Dir.DOWN, tf));
+            tf.tanks.add(new Tank(50 +i * 80,200,Dir.DOWN,Group.BAD, tf));
         }
 
 
