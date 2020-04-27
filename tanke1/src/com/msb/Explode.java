@@ -26,6 +26,9 @@ public class Explode {
         this.x = x;
         this.y = y;
         this.tf = tf;
+
+
+       // new Audio("audio/explode.wav").run();
     }
     public void paint(Graphics g) {
         g.drawImage(ResourceMgr.explodes[step++], x, y, null);
