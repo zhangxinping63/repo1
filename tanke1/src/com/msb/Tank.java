@@ -12,7 +12,7 @@ import java.util.Random;
 public class Tank {
     private int x, y;
     private Dir dir = Dir.DOWN;
-    private static final int SPEED = 1;
+    private static final int SPEED = 5;
 
     public static final int WIDTH = ResourceMgr.tankD.getWidth();
     public static final int HEIGHT = ResourceMgr.tankD.getHeight();
@@ -128,10 +128,20 @@ public class Tank {
             default:
                 break;
         }
-        if(random.nextInt(10) > 8){
+        //自动发生子弹
+        if(this.group == Group.BAD && random.nextInt(100) > 95){
             this.fire();
         }
+        if(this.group == Group.BAD && random.nextInt(100) > 95){
+            randomDir();
+        }
        // randomDir();
+    }
+    private void randomDir() {
+
+        this.dir = Dir.values()[random.nextInt(4)];
+
+
     }
 
     /*private void randomDir() {
