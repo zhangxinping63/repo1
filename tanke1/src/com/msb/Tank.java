@@ -14,8 +14,8 @@ public class Tank {
     private Dir dir = Dir.DOWN;
     private static final int SPEED = 5;
 
-    public static final int WIDTH = ResourceMgr.tankD.getWidth();
-    public static final int HEIGHT = ResourceMgr.tankD.getHeight();
+    public static final int WIDTH = ResourceMgr.goodTankU.getWidth();
+    public static final int HEIGHT = ResourceMgr.goodTankU.getHeight();
 
     private boolean moving = true;
     private TankFrame tf = null;
@@ -89,16 +89,16 @@ public class Tank {
 
         switch (dir){
             case LEFT:
-                g.drawImage(ResourceMgr.tankL,x,y,null);
+                g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankL : ResourceMgr.badTankL, x, y,null);
                 break;
             case UP:
-                g.drawImage(ResourceMgr.tankU,x,y,null);
+                g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankU : ResourceMgr.badTankU, x, y,null);
                 break;
             case RIGHT:
-                g.drawImage(ResourceMgr.tankR,x,y,null);
+                g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankR : ResourceMgr.badTankR, x, y,null);
                 break;
             case DOWN:
-                g.drawImage(ResourceMgr.tankD,x,y,null);
+                g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankD : ResourceMgr.badTankD, x, y,null);
                 break;
         }
         //Color c = g.getColor();
@@ -136,12 +136,22 @@ public class Tank {
             randomDir();
         }
        // randomDir();
+
+        //边界检测
+        boundsCheck();
     }
+
+    private void boundsCheck() {
+        if(this.x < 2) x = 2;
+        if(this.y < 28) y = 28;
+        if(this.x > TankFrame.GAME_WIDTH - Tank.WIDTH - 2) x = TankFrame.GAME_WIDTH - Tank.WIDTH - 2;
+        if(this.y > TankFrame.GAME_HEIGHT - Tank.HEIGHT - 2) y = TankFrame.GAME_HEIGHT - Tank.HEIGHT -2;
+
+
+    }
+
     private void randomDir() {
-
         this.dir = Dir.values()[random.nextInt(4)];
-
-
     }
 
     /*private void randomDir() {
