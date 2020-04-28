@@ -17,6 +17,8 @@ public class Tank {
     public static final int WIDTH = ResourceMgr.goodTankU.getWidth();
     public static final int HEIGHT = ResourceMgr.goodTankU.getHeight();
 
+    Rectangle rect = new Rectangle();
+
     private boolean moving = true;
     private TankFrame tf = null;
     private boolean living = true;
@@ -51,6 +53,11 @@ public class Tank {
         this.dir = dir;
         this.tf = tf;
         this.group = group;
+        rect.x = this.x;
+        rect.y = this.y;
+        rect.width = WIDTH;
+        rect.height = HEIGHT;
+
     }
 
     public int getX() {
@@ -128,6 +135,8 @@ public class Tank {
             default:
                 break;
         }
+
+
         //自动发生子弹
         if(this.group == Group.BAD && random.nextInt(100) > 95){
             this.fire();
@@ -139,13 +148,25 @@ public class Tank {
 
         //边界检测
         boundsCheck();
+
+        //update rect
+        rect.x = this.x;
+        rect.y = this.y;
     }
 
     private void boundsCheck() {
-        if(this.x < 2) x = 2;
-        if(this.y < 28) y = 28;
-        if(this.x > TankFrame.GAME_WIDTH - Tank.WIDTH - 2) x = TankFrame.GAME_WIDTH - Tank.WIDTH - 2;
-        if(this.y > TankFrame.GAME_HEIGHT - Tank.HEIGHT - 2) y = TankFrame.GAME_HEIGHT - Tank.HEIGHT -2;
+        if(this.x < 2) {
+            x = 2;
+        }
+        if(this.y < 28) {
+            y = 28;
+        }
+        if(this.x > TankFrame.GAME_WIDTH - Tank.WIDTH - 2) {
+            x = TankFrame.GAME_WIDTH - Tank.WIDTH - 2;
+        }
+        if(this.y > TankFrame.GAME_HEIGHT - Tank.HEIGHT - 2) {
+            y = TankFrame.GAME_HEIGHT - Tank.HEIGHT -2;
+        }
 
 
     }

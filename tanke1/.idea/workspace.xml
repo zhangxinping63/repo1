@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e7f808ce-7bc0-4d89-b937-07a3c6a497f4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/msb/ResourceMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/msb/ResourceMgr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tanke1/com/msb/Tank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tanke1/com/msb/Tank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/msb/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/msb/Bullet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/msb/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/msb/Tank.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,10 +17,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/msb/Explode.java">
+        <entry file="file://$PROJECT_DIR$/src/com/msb/Bullet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+            <state relative-caret-position="242">
+              <caret line="122" column="39" lean-forward="true" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#438#439#0" expanded="true" />
+                <element signature="e#467#468#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,16 +118,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/msb/Tank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
+            <state relative-caret-position="443">
+              <caret line="150" column="8" selection-start-line="150" selection-start-column="8" selection-end-line="150" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1319#1320#0" expanded="true" />
                 <element signature="e#1345#1346#0" expanded="true" />
-                <element signature="e#3207#3208#0" expanded="true" />
-                <element signature="e#3265#3266#0" expanded="true" />
-                <element signature="e#3235#3236#0" expanded="true" />
-                <element signature="e#3270#3271#0" expanded="true" />
+                <element signature="e#3859#3860#0" expanded="true" />
+                <element signature="e#4182#4183#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,8 +162,8 @@
         <option value="$PROJECT_DIR$/src/com/msb/ImageUtil.java" />
         <option value="$PROJECT_DIR$/src/com/msb/TankFrame.java" />
         <option value="$PROJECT_DIR$/src/com/msb/Explode.java" />
-        <option value="$PROJECT_DIR$/src/com/msb/Bullet.java" />
         <option value="$PROJECT_DIR$/src/com/msb/ResourceMgr.java" />
+        <option value="$PROJECT_DIR$/src/com/msb/Bullet.java" />
         <option value="$PROJECT_DIR$/src/com/msb/Tank.java" />
       </list>
     </option>
@@ -248,7 +252,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587993242423" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588054004065" />
     <property name="last_opened_file_path" value="D:/nd_workspace/peidian-youtian" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -364,7 +368,7 @@
       <workItem from="1587777170074" duration="12996000" />
       <workItem from="1587865736848" duration="9040000" />
       <workItem from="1587951177551" duration="19945000" />
-      <workItem from="1588037132399" duration="5997000" />
+      <workItem from="1588037132399" duration="7428000" />
     </task>
     <task id="LOCAL-00001" summary="试试修改">
       <created>1587708207576</created>
@@ -471,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587988635126</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="边界检测">
+      <created>1588052624212</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1588052624212</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -495,10 +506,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75441000" />
+    <option name="totallyTimeSpent" value="76872000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27132195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -591,7 +603,8 @@
     <MESSAGE value="加入爆炸功能，爆炸结束后从list中移除" />
     <MESSAGE value="敌人坦克随机移动" />
     <MESSAGE value="调整爆炸的位置" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整爆炸的位置" />
+    <MESSAGE value="边界检测" />
+    <option name="LAST_COMMIT_MESSAGE" value="边界检测" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://D:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/Window.java">
@@ -713,18 +726,6 @@
     <entry file="file://$PROJECT_DIR$/src/images/BadTank2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/msb/Bullet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2310">
-          <caret line="114" column="9" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/msb/Audio.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -808,18 +809,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/msb/Bullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="122" column="39" lean-forward="true" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/msb/Tank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
+        <state relative-caret-position="443">
+          <caret line="150" column="8" selection-start-line="150" selection-start-column="8" selection-end-line="150" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1319#1320#0" expanded="true" />
             <element signature="e#1345#1346#0" expanded="true" />
-            <element signature="e#3207#3208#0" expanded="true" />
-            <element signature="e#3265#3266#0" expanded="true" />
-            <element signature="e#3235#3236#0" expanded="true" />
-            <element signature="e#3270#3271#0" expanded="true" />
+            <element signature="e#3859#3860#0" expanded="true" />
+            <element signature="e#4182#4183#0" expanded="true" />
           </folding>
         </state>
       </provider>
